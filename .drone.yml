@@ -1,0 +1,99 @@
+---
+kind: pipeline
+name: testing
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: prepare
+  image: webhippie/golang:1.11
+  pull: always
+  commands:
+  - make sync
+  - make gorunpkg
+  - make clean
+  - make generate
+  volumes:
+  - name: gopath
+    path: /srv/app
+
+- name: vet
+  image: webhippie/golang:1.12
+  pull: always
+  commands:
+  - make vet
+  volumes:
+  - name: gopath
+    path: /srv/app
+
+- name: check
+  image: webhippie/golang:1.12
+  pull: always
+  commands:
+  - make staticcheck
+  volumes:
+  - name: gopath
+    path: /srv/app
+
+- name: lint
+  image: webhippie/golang:1.12
+  pull: always
+  commands:
+  - make lint
+  volumes:
+  - name: gopath
+    path: /srv/app
+
+- name: test
+  image: webhippie/golang:1.12
+  pull: always
+  commands:
+  - make test
+  volumes:
+  - name: gopath
+    path: /srv/app
+
+- name: build
+  image: webhippie/golang:1.12
+  pull: always
+  commands:
+  - make build
+  volumes:
+  - name: gopath
+    path: /srv/app
+
+- name: coverage
+  image: plugins/codacy:1
+  pull: always
+  settings:
+    token:
+      from_secret: codacy_token
+
+- name: notify
+  image: plugins/matrix:1
+  pull: always
+  settings:
+    username:
+      from_secret: matrix_username
+    password:
+      from_secret: matrix_password
+    roomid:
+      from_secret: matrix_roomid
+  when:
+    event:
+    - push
+    - tag
+    status:
+    - failure
+
+volumes:
+- name: gopath
+  temp: {}
+
+trigger:
+  ref:
+  - refs/heads/master
+  - refs/tags/**
+  - refs/pull/**
