@@ -27,6 +27,8 @@ steps:
   volumes:
   - name: gopath
     path: /srv/app
+  depends_on:
+  - prepare
 
 - name: check
   image: webhippie/golang:1.12
@@ -36,6 +38,8 @@ steps:
   volumes:
   - name: gopath
     path: /srv/app
+  depends_on:
+  - prepare
 
 - name: lint
   image: webhippie/golang:1.12
@@ -45,6 +49,8 @@ steps:
   volumes:
   - name: gopath
     path: /srv/app
+  depends_on:
+  - prepare
 
 - name: test
   image: webhippie/golang:1.12
@@ -54,6 +60,8 @@ steps:
   volumes:
   - name: gopath
     path: /srv/app
+  depends_on:
+  - prepare
 
 - name: build
   image: webhippie/golang:1.12
@@ -63,6 +71,8 @@ steps:
   volumes:
   - name: gopath
     path: /srv/app
+  depends_on:
+  - prepare
 
 - name: coverage
   image: plugins/codacy:1
@@ -70,6 +80,8 @@ steps:
   settings:
     token:
       from_secret: codacy_token
+  depends_on:
+  - test
 
 - name: notify
   image: plugins/matrix:1
@@ -87,6 +99,14 @@ steps:
     - tag
     status:
     - failure
+  depends_on:
+  - prepare
+  - vet
+  - check
+  - lint
+  - test
+  - build
+  - coverage
 
 volumes:
 - name: gopath
