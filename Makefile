@@ -40,7 +40,7 @@ staticcheck: gorunpkg
 
 .PHONY: lint
 lint: gorunpkg
-	for PKG in $(PACKAGES); do gorunpkg github.com/golang/lint/golint -set_exit_status $$PKG || exit 1; done;
+	for PKG in $(PACKAGES); do gorunpkg golang.org/x/lint/golint -set_exit_status $$PKG || exit 1; done;
 
 .PHONY: generate
 generate: gorunpkg
