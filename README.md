@@ -1,13 +1,12 @@
 # Library for McUpdater
 
-[![Build Status](http://cloud.drone.io/api/badges/kleister/go-mcupdater/status.svg)](http://cloud.drone.io/kleister/go-mcupdater)
-[![Stories in Ready](https://badge.waffle.io/kleister/kleister-api.svg?label=ready&title=Ready)](http://waffle.io/kleister/kleister-api)
+[![Build Status](https://cloud.drone.io/api/badges/kleister/go-mcupdater/status.svg)](https://cloud.drone.io/kleister/go-mcupdater)
 [![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d499ad4041c945adbd57d5eed0956801)](https://www.codacy.com/app/kleister/go-mcupdater?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kleister/go-mcupdater&amp;utm_campaign=Badge_Grade)
 [![Go Doc](https://godoc.org/github.com/kleister/go-mcupdater?status.svg)](http://godoc.org/github.com/kleister/go-mcupdater)
 [![Go Report](http://goreportcard.com/badge/github.com/kleister/go-mcupdater)](http://goreportcard.com/report/github.com/kleister/go-mcupdater)
 
-This repository will provides helpers related to McUpdater.
+This repository provides helpers related to Minecraft Updater.
 
 
 ## Development
