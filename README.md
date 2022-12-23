@@ -1,52 +1,61 @@
-# Library for McUpdater
+# go-mcupdater
 
-[![Build Status](https://cloud.drone.io/api/badges/kleister/go-mcupdater/status.svg)](https://cloud.drone.io/kleister/go-mcupdater)
-[![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d499ad4041c945adbd57d5eed0956801)](https://www.codacy.com/app/kleister/go-mcupdater?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kleister/go-mcupdater&amp;utm_campaign=Badge_Grade)
-[![Go Doc](https://godoc.org/github.com/kleister/go-mcupdater?status.svg)](http://godoc.org/github.com/kleister/go-mcupdater)
-[![Go Report](http://goreportcard.com/badge/github.com/kleister/go-mcupdater)](http://goreportcard.com/report/github.com/kleister/go-mcupdater)
+[![General Workflow](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml) [![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/df9689895d604266ab02a3e18a686b0a)](https://www.codacy.com/gh/kleister/go-mcupdater/dashboard?utm_source=github.com&utm_medium=referral&utm_content=kleister/go-mcupdater&utm_campaign=Badge_Grade) [![Go Reference](https://pkg.go.dev/badge/github.com/kleister/go-mcupdater.svg)](https://pkg.go.dev/github.com/kleister/go-mcupdater)
 
 This repository provides helpers related to Minecraft Updater.
 
-
 ## Development
 
-Make sure you have a working Go environment, for further reference or a guide take a look at the [install instructions](http://golang.org/doc/install.html). This project requires Go >= v1.11 because we are using Go modules. It is also possible to just simply execute the `go get github.com/kleister/go-mcupdater/...` command, but we prefer to use our `Makefile`:
+Make sure you have a working Go environment, for further reference or a guide
+take a look at the [install instructions][golang]. This project doesn't enforce
+a specific Go version, but we are trying to use the latest stable releases. It
+is also possible to simply execute `go get`, but we prefer to use our `Makefile`:
 
-```bash
-go get -d github.com/kleister/go-mcupdater/...
-cd $GOPATH/src/github.com/kleister/go-mcupdater
-make sync gorunpkg clean generate test
+```console
+git clone https://github.com/kleister/go-mcupdater.git
+cd go-mcupdater
+
+make clean generate test
 ```
-
 
 ## Examples
 
-TBD
+### Hello world
 
+[embedmd]:# (examples/dummy/main.go go)
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("Hello world!")
+}
+```
 
 ## Security
 
-If you find a security issue please contact kleister@webhippie.de first.
-
+If you find a security issue please contact
+[kleister@webhippie.de](mailto:kleister@webhippie.de) first.
 
 ## Contributing
 
 Fork -> Patch -> Push -> Pull Request
 
-
 ## Authors
 
-* [Thomas Boerger](https://github.com/tboerger)
-
+-   [Thomas Boerger](https://github.com/tboerger)
 
 ## License
 
 Apache-2.0
 
-
 ## Copyright
 
-```
+```console
 Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
 ```
+
+[golang]: http://golang.org/doc/install.html
