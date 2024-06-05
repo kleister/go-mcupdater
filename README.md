@@ -1,6 +1,6 @@
 # go-mcupdater
 
-[![General Workflow](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml) [![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/df9689895d604266ab02a3e18a686b0a)](https://www.codacy.com/gh/kleister/go-mcupdater/dashboard?utm_source=github.com&utm_medium=referral&utm_content=kleister/go-mcupdater&utm_campaign=Badge_Grade) [![Go Reference](https://pkg.go.dev/badge/github.com/kleister/go-mcupdater.svg)](https://pkg.go.dev/github.com/kleister/go-mcupdater)
+[![General Workflow](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml/badge.svg)](https://github.com/kleister/go-mcupdater/actions/workflows/general.yml) [![Join the Matrix chat at https://matrix.to/#/#kleister:matrix.org](https://img.shields.io/badge/matrix-%23kleister%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#kleister:matrix.org) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/272b203ace1f4f0dbfb11995e600c6bd)](https://app.codacy.com/gh/kleister/go-mcupdater/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Go Reference](https://pkg.go.dev/badge/github.com/kleister/go-mcupdater.svg)](https://pkg.go.dev/github.com/kleister/go-mcupdater)
 
 This repository provides helpers related to Minecraft Updater.
 
@@ -20,20 +20,8 @@ make clean generate test
 
 ## Examples
 
-### Hello world
-
-[embedmd]:# (examples/dummy/main.go go)
-```go
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println("Hello world!")
-}
-```
+For different kind of examples how to use this library please take a look at the
+[examples/](./examples) folder.
 
 ## Security
 
