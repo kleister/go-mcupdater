@@ -54,4 +54,11 @@ tasks:
     env:
       CGO_ENABLED: "0"
 
+  tools:
+    desc: Fetch tools
+    cmds:
+      - go get github.com/golangci/golangci-lint/v2/cmd/golangci-lint
+      - go get github.com/mgechev/revive
+      - go mod tidy
+
 ...
