@@ -168,5 +168,11 @@ labels:
   - name: tools
     color: 1d76db
     description: Tools updates based on Renovate
+  - name: golangci
+    color: 1d76db
+    description: Tools updates for golangci-lint
+  - name: revive
+    color: 1d76db
+    description: Tools updates for revive
 
 ...
