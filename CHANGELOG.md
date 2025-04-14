@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/kleister/go-mcupdater/compare/v1.0.0...v1.1.0) (2025-04-14)
+
+
+### Features
+
+* upgrade revive and golangci-lint and make lint happy ([172444e](https://github.com/kleister/go-mcupdater/commit/172444eb93981cf4e187716e183184ff42fec27b))
+
 ## 1.0.0 (2024-06-05)
 
 
