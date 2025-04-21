@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/kleister/go-mcupdater/compare/v1.1.0...v1.2.0) (2025-04-21)
+
+
+### Features
+
+* **deps:** update module github.com/mgechev/revive to v1.9.0 ([#34](https://github.com/kleister/go-mcupdater/issues/34)) ([5cb436e](https://github.com/kleister/go-mcupdater/commit/5cb436ec6bc340a1c4c3b10441f5f3b84f108aab))
+
+
+### Bugfixes
+
+* **deps:** update module github.com/golangci/golangci-lint/v2 to v2.1.2 ([#36](https://github.com/kleister/go-mcupdater/issues/36)) ([97e7729](https://github.com/kleister/go-mcupdater/commit/97e77299d66eb54ed6352ed9e79d8a2b70bdc853))
+
 ## [1.1.0](https://github.com/kleister/go-mcupdater/compare/v1.0.0...v1.1.0) (2025-04-14)
 
 
