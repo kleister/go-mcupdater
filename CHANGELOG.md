@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/kleister/go-mcupdater/compare/v1.2.0...v1.2.1) (2025-04-28)
+
+
+### Bugfixes
+
+* **deps:** update module github.com/golangci/golangci-lint/v2 to v2.1.3 ([#37](https://github.com/kleister/go-mcupdater/issues/37)) ([b95c51f](https://github.com/kleister/go-mcupdater/commit/b95c51f4ec2c5abc884cc586db20f4ce474641ed))
+* **deps:** update module github.com/golangci/golangci-lint/v2 to v2.1.5 ([#38](https://github.com/kleister/go-mcupdater/issues/38)) ([9abbd97](https://github.com/kleister/go-mcupdater/commit/9abbd9757fde60b3cc138dcb8ffa57808a490c65))
+
 ## [1.2.0](https://github.com/kleister/go-mcupdater/compare/v1.1.0...v1.2.0) (2025-04-21)
 
 
