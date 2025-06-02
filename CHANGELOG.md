@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/kleister/go-mcupdater/compare/v1.2.2...v1.3.0) (2025-06-02)
+
+
+### Features
+
+* **deps:** update module github.com/mgechev/revive to v1.10.0 ([#40](https://github.com/kleister/go-mcupdater/issues/40)) ([0e6c9be](https://github.com/kleister/go-mcupdater/commit/0e6c9bee4d5cb572746976a698f64f2b0e505fe6))
+
 ## [1.2.2](https://github.com/kleister/go-mcupdater/compare/v1.2.1...v1.2.2) (2025-05-05)
 
 
