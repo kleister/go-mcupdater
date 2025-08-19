@@ -31,7 +31,7 @@ jobs:
 
       - name: Checkout source
         if: steps.branch.outputs.exists == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
