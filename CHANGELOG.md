@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.9.0](https://github.com/kleister/go-mcupdater/compare/v1.8.0...v1.9.0) (2026-08-10)
+
+### Features
+
+* restructure repo and build processes ([de070f6](https://github.com/kleister/go-mcupdater/commit/de070f67f4b5332601b9d3ad12e37f896a2322d5))
+
+### Dependencies
+
+* **minor:** update dependency golangci-lint to v2.12.2 ([#86](https://github.com/kleister/go-mcupdater/issues/86)) ([79064dd](https://github.com/kleister/go-mcupdater/commit/79064dd2288df85dfb5135f411467c06b47d7f52))
+
 ## [1.8.0](https://github.com/kleister/go-mcupdater/compare/v1.7.1...v1.8.0) (2025-12-08)
 
 
