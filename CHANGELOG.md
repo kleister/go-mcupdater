@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.1](https://github.com/kleister/go-mcupdater/compare/v1.9.0...v1.9.1) (2026-08-17)
+
+### Dependencies
+
+* **patch:** update dependency go to v1.26.6 ([#90](https://github.com/kleister/go-mcupdater/issues/90)) ([f1074eb](https://github.com/kleister/go-mcupdater/commit/f1074eb8d35610e681619be363393d6a9ffe7421))
+* **patch:** update dependency pre-commit to v4.6.2 ([#89](https://github.com/kleister/go-mcupdater/issues/89)) ([92f7a6d](https://github.com/kleister/go-mcupdater/commit/92f7a6ddefdb27e74cc2d9a285cb4c65fcf5f4be))
+
 ## [1.9.0](https://github.com/kleister/go-mcupdater/compare/v1.8.0...v1.9.0) (2026-08-10)
 
 ### Features
