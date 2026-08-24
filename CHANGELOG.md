@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.10.0](https://github.com/kleister/go-mcupdater/compare/v1.9.1...v1.10.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency go to v1.27.0 ([#92](https://github.com/kleister/go-mcupdater/issues/92)) ([e51dfa3](https://github.com/kleister/go-mcupdater/commit/e51dfa339d678da85945a21cb12cf78261605901))
+* **minor:** update dependency golangci-lint to v2.13.0 ([#93](https://github.com/kleister/go-mcupdater/issues/93)) ([ff5c71e](https://github.com/kleister/go-mcupdater/commit/ff5c71eb6dc7000d73f606d01cae18936ce50e2b))
+* **minor:** update dependency task to v3.53.1 ([#91](https://github.com/kleister/go-mcupdater/issues/91)) ([dd4476b](https://github.com/kleister/go-mcupdater/commit/dd4476bcb5119e5f64225fb20b8aaaf928813f68))
+* **patch:** update dependency golangci-lint to v2.13.1 ([#94](https://github.com/kleister/go-mcupdater/issues/94)) ([1946db6](https://github.com/kleister/go-mcupdater/commit/1946db619db594b943dcb834fc24b0235ca7229e))
+
 ## [1.9.1](https://github.com/kleister/go-mcupdater/compare/v1.9.0...v1.9.1) (2026-08-17)
 
 ### Dependencies
