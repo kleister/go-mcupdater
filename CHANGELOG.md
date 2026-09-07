@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.10.2](https://github.com/kleister/go-mcupdater/compare/v1.10.1...v1.10.2) (2026-09-07)
+
+### Dependencies
+
+* **patch:** update dependency go to v1.27.1 ([#98](https://github.com/kleister/go-mcupdater/issues/98)) ([c840d6a](https://github.com/kleister/go-mcupdater/commit/c840d6af5b422306497e10df9037f8f4e2f0ef30))
+
 ## [1.10.1](https://github.com/kleister/go-mcupdater/compare/v1.10.0...v1.10.1) (2026-08-31)
 
 ### Dependencies
