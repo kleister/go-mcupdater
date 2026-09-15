@@ -2,11 +2,6 @@ module github.com/kleister/go-mcupdater
 
 go 1.26.0
 
-tool (
-	github.com/golangci/golangci-lint/v2/cmd/golangci-lint
-	github.com/mgechev/revive
-)
-
 require (
 	4d63.com/gocheckcompilerdirectives v1.4.0 // indirect
 	4d63.com/gochecknoglobals v0.2.2 // indirect
